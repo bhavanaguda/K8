@@ -3,7 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: api-server
-  namespace: ha-testing
+  namespace: task
 spec:
   replicas: 1
   selector:
@@ -27,7 +27,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: etcd
-  namespace: ha-testing
+  namespace: task
 spec:
   replicas: 1
   selector:
